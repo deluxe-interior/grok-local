@@ -1,0 +1,24 @@
+
+[[accounts]]
+alias = "X"
+enabled = true
+
+# Paste only into config/accounts.toml, never into this example file.
+sso = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzZXNzaW9uX2lkIjoiMTg5MjQ5NTgtYTgyOS00YzQ1LWFiYTQtZGViZjdiM2QyMjM4In0.ajErbSEW326dIzvn12sYsXkJDm7S0wIv977u6tcexZo"
+cf_clearance = "UzBnAESg3FRv7Yte_Hv0eH19Jpsrx5j2M_IF9iHtwkA-1790002316-1.2.1.1-EejbpD8LI1M1CmKva.c5cWXzukdLF2fJTFZcyloB1gPbk7kJnqveYceQ9_Sx0AptwUAllhvapf73K.mQcOGJzdXYxdCUuS3ySf1kLVOnqXYqL2qH7w7xd_m6_I2eN_cPWqQAIyrEBBUy8fl3dgN5ZRP1ZQ7mEll1ISvFp4qobNOF8Py4BDDf.ADHRAs2JtGb3S2pvcNN5m2AekC3IHpaKP.s1ffkaGXMNaVFuLmUQiAs7YbFjYZ5wYdI3VLWtJTZcRikLqk5m0zAmJ0nY8FI0DpnuKZYvaRTIh_F3t8RVo0xwfX9WCkoOt3Xn2yzkVl8N2.RNv30FT2h072e9887nuxmWX2DRkC.I7SrfiT0OVE"
+grok_device_id = "ba336a58-5ab6-4ee9-93f5-717e2fa06a75"
+
+# Optional but recommended: paste the FULL browser Cookie header (or the extra
+# tokens). Useful keys: x-anonuserid, x-challenge, x-signature, x-userid, __cf_bm.
+# These must come from the same browser session as cf_clearance.
+__cf_bm = "Gcpee6nCHtSb8E1sUWsPBc1dGkIeVxcpHprf6bTy5gg-1790002536.547031-1.0.1.1-XgifKIJsptaKppDTAdGWYzXU.Wz70Sv3ZODl.lVQZt.Ur8l.JRL7w9ui.JLuFIAB7EQ6MCIHXgzY.AXnfGGymVYMtG2nuuvSahq2ER0jt0K_k9YfH4PgW87gd3cqiBiq"
+cf_cookies = "grok_device_id=ba336a58-5ab6-4ee9-93f5-717e2fa06a75; __stripe_mid=c0e5779b-df81-463f-9bca-81c7fd8d9acff6aa77; __cuid=f28ddc65-5752-4313-8764-f92f8fbca190; _twpid=tw.1786209102842.145073435976833162; _gcl_au=1.1.70780855.1786209101.-.-.1788575389.255525219.1788575389.1788575389; OptanonAlertBoxClosed=2026-09-09T15:12:14.409Z; i18nextLng=en; __cuid=f28ddc65-5752-4313-8764-f92f8fbca190; sso=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzZXNzaW9uX2lkIjoiMTg5MjQ5NTgtYTgyOS00YzQ1LWFiYTQtZGViZjdiM2QyMjM4In0.ajErbSEW326dIzvn12sYsXkJDm7S0wIv977u6tcexZo; sso-rw=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzZXNzaW9uX2lkIjoiMTg5MjQ5NTgtYTgyOS00YzQ1LWFiYTQtZGViZjdiM2QyMjM4In0.ajErbSEW326dIzvn12sYsXkJDm7S0wIv977u6tcexZo; x-userid=f6be3af5-486c-4066-bbb6-17ea42d69651; __stripe_sid=ad093bd0-0183-4e32-aeca-8cb8e3a4c54517bbe9; cf_clearance=UzBnAESg3FRv7Yte_Hv0eH19Jpsrx5j2M_IF9iHtwkA-1790002316-1.2.1.1-EejbpD8LI1M1CmKva.c5cWXzukdLF2fJTFZcyloB1gPbk7kJnqveYceQ9_Sx0AptwUAllhvapf73K.mQcOGJzdXYxdCUuS3ySf1kLVOnqXYqL2qH7w7xd_m6_I2eN_cPWqQAIyrEBBUy8fl3dgN5ZRP1ZQ7mEll1ISvFp4qobNOF8Py4BDDf.ADHRAs2JtGb3S2pvcNN5m2AekC3IHpaKP.s1ffkaGXMNaVFuLmUQiAs7YbFjYZ5wYdI3VLWtJTZcRikLqk5m0zAmJ0nY8FI0DpnuKZYvaRTIh_F3t8RVo0xwfX9WCkoOt3Xn2yzkVl8N2.RNv30FT2h072e9887nuxmWX2DRkC.I7SrfiT0OVE; mp_ea93da913ddb66b6372b89d97b1029ac_mixpanel=%7B%22distinct_id%22%3A%22f6be3af5-486c-4066-bbb6-17ea42d69651%22%2C%22%24device_id%22%3A%2277eed1c8-6734-4069-9a35-cc7aa81ba22a%22%2C%22%24initial_referrer%22%3A%22%24direct%22%2C%22%24initial_referring_domain%22%3A%22%24direct%22%2C%22__mps%22%3A%7B%7D%2C%22__mpso%22%3A%7B%7D%2C%22__mpus%22%3A%7B%7D%2C%22__mpa%22%3A%7B%7D%2C%22__mpu%22%3A%7B%7D%2C%22__mpr%22%3A%5B%5D%2C%22__mpap%22%3A%5B%5D%2C%22%24user_id%22%3A%22f6be3af5-486c-4066-bbb6-17ea42d69651%22%7D; OptanonConsent=isGpcEnabled=0&datestamp=Mon+Sep+21+2026+09%3A51%3A54+GMT-0500+(Central+Daylight+Time)&version=202603.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&landingPath=NotLandingPage&groups=C0001%3A1%2CC0004%3A1%2CC0003%3A1%2CC0002%3A1&AwaitingReconsent=false&consentId=f6be3af5-486c-4066-bbb6-17ea42d69651&interactionCount=3&isAnonUser=0&prevHadToken=0&intType=9&crTime=1788966734578&geolocation=CH%3BZH; __cf_bm=ZYZYGUs1Qwd1VQm4Ywp2xF5BGp2lT.eNvWRBX2t8OEg-1790002319.338944-1.0.1.1-d.LVa.R0lawKK7JO9JZABewJ.2rs3rG35g9Q.FpS4Pioaq6d1Vj.3uO..uKAoxQo7ZJqjHy3Iy51Y5DUR6OARs4Y_8U84zAACCCkpm8o2x4_Uz2r7UY0cxZPwr0vfMY2; _twsid=1790002063206-160673319.27.1790002324109"
+
+# Keep these aligned with the browser session that produced the cookies.
+# curl_cffi currently impersonates up to chrome146; higher versions map down.
+user_agent = "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+browser = "chrome150"
+
+# cf_clearance is IP-bound. If the browser and this host use different egress
+# IPs, set proxy to the same exit as the browser session.
+proxy = ""

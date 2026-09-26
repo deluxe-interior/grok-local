@@ -1,0 +1,24 @@
+
+[[accounts]]
+alias = "City"
+enabled = true
+
+# Paste only into config/accounts.toml, never into this example file.
+sso = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzZXNzaW9uX2lkIjoiZDFkNzBjOTEtN2ZlMS00ZTNiLWExMmUtZTZmNmJiYWFiNDU3In0.RtD6VKxN2cjQUQsjGlk9GYBaWxI9eMMduc-WFGd8ohY"
+
+cf_clearance = "YqgA.GbcsYN8YcsLyb1lbD8VIFpz9.qfQIzFhd1rJ8o-1790356562-1.2.1.1-C_TuAG6.pDxu8XmW7niXwSurQ2_AJ_rt54Iuikq8E4xgcBAlXZz4XJuK7Y86aD8LrsRd_DPW7CxjShMDEKlceW.OXmVX0NOd5v76JVzUb._7zBQMnaVJt4FgrBzTUsUM8pEZSaFwkFXoa3Q1mgeCM6Qic_GAmz.crkFRjp_wrmWt7GC1xq0L5B4X6qqSJn6ZQIdMmwucuTulQG9N_8sd4IyBsfBWAZ92y5PzGQzN2mnIou0iwIw8rKqxOp5r.JYIN8KdBcrMgqKn4D1oNzQutQsG6ZFl4GsI4PMLvGFqc1a.MQhZvQJAmBbVqxegnqrwB3nyLi2f0Xl67JSVcoHNoC4kO5tf5QBx6FLNiY4mrzc"
+
+grok_device_id = "ba336a58-5ab6-4ee9-93f5-717e2fa06a75"
+
+# Optional but recommended: paste the FULL browser Cookie header (or the extra
+# tokens). Useful keys: x-anonuserid, x-challenge, x-signature, x-userid, __cf_bm.
+# These must come from the same browser session as cf_clearance.
+
+# Keep these aligned with the browser session that produced the cookies.
+# curl_cffi currently impersonates up to chrome146; higher versions map down.
+#user_agent = "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+browser = "chrome150"
+
+# cf_clearance is IP-bound. If the browser and this host use different egress
+# IPs, set proxy to the same exit as the browser session.
+proxy = ""
