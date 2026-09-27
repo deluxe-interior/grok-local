@@ -1,7 +1,7 @@
 [project]
-name = "grok-imagine-archive"
+name = "grok-local"
 version = "0.1.0"
-description = "Local backup tool for Grok Imagine saved assets."
+description = "Local backup of grok imagine conversations, responses and assets "
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
@@ -11,7 +11,7 @@ dependencies = [
 ]
 
 [project.scripts]
-grok-imagine-archive = "grok_imagine_archive.cli:main"
+grok-imagine-archive = "grok-local.cli:main"
 
 [dependency-groups]
 dev = [
