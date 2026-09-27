@@ -1,15 +1,12 @@
-# Grok Imagine Archive
+# Grok Local
 
-**English** | [简体中文](docs/zh-CN/README.md)
+**English** 
 
-`grok-imagine-archive` is a local archive tool for Grok Imagine Saved/Liked assets. It
+`grok-local` is a local archive tool for Grok Imagine Saved/Liked assets. It
 uses the JSON APIs behind the official Web interface in read-only mode, then
 stores every enumerable image, video, thumbnail, prompt, raw JSON payload, folder
 relationship, and derivation relationship in a local archive. It also includes a
 read-only Web UI for browsing the archive offline.
-
-This project is designed as a maintainable archive system, not a one-off export
-script:
 
 - Remote enumeration uses cursor pagination instead of first-screen DOM state, so
   it is not misled by lazy loading in the Saved page.
@@ -23,9 +20,7 @@ script:
 The screenshots below are generated from mock data, not from a real Grok account
 or private archive.
 
-![Mock Web archive grid](docs/assets/web-grid.png)
-
-![Mock post detail dialog](docs/assets/web-detail.png)
+TODO
 
 ## Documentation
 
@@ -41,18 +36,16 @@ If you are returning to this project after a long break, read these in order:
 
 ### What Problem It Solves
 
-The Grok Imagine Saved page is lazy-loaded. When an account has many assets,
-browser scrolling, screenshots, or manual saving are hard to control and do not
-reliably preserve:
+Local storage of assets as there is no SLA in grok imagine terms to save generated material
 
-- original media, thumbnails, videos, and other media variants
+- Original media, thumbnails, videos, and other media variants
 - `prompt`, `originalPrompt`, model name, resolution, and related metadata
-- the relationship between posts and folders
-- derivation chains such as original posts, child posts, and input media
-- whether an archive run is complete, which files failed, and whether retrying is
+- The relationship between posts and folders
+- Derivation chains such as original posts, child posts, and input media
+- Whether an archive run is complete, which files failed, and whether retrying is
   safe
 
-`grok-imagine-archive` turns those remote assets into a local library that can be
+`grok-local` turns those remote assets into a local library that can be
 resynced, verified, and browsed.
 
 ### Core Commands
@@ -145,35 +138,35 @@ Notes:
 - You can override the default paths with environment variables:
 
 ```bash
-export GROK_IMAGINE_ARCHIVE_CONFIG=/secure/accounts.toml
+export GROK_IMAGINE_ARCHIVE_CONFIG=/config/accounts.toml
 export GROK_IMAGINE_ARCHIVE_ROOT=/data/grok-archive
 ```
 
 ### 2. Check Connectivity
 
 ```bash
-uv run grok-imagine-archive auth check --account demo
+uv run grok-local auth check --account demo
 ```
 
 ### 3. Run A Small Trial Sync
 
 ```bash
-uv run grok-imagine-archive sync --account demo --limit 20
-uv run grok-imagine-archive verify --account demo
+uv run grok-local sync --account demo --limit 20
+uv run grok-local verify --account demo
 ```
 
 ### 4. Run The Full Sync
 
 ```bash
-uv run grok-imagine-archive sync --account demo --full --download-concurrency 8
-uv run grok-imagine-archive verify --account demo
+uv run grok-local sync --account demo --full --download-concurrency 8
+uv run grok-local verify --account demo
 ```
 
 ### 5. Browse The Archive
 
 ```bash
 GROK_IMAGINE_ARCHIVE_WEB_TOKEN='replace-with-long-random-token' \
-  uv run grok-imagine-archive web --account demo --host 127.0.0.1 --port 7860
+  uv run grok-local web --account demo --host 127.0.0.1 --port 7860
 ```
 
 First browser visit:
@@ -190,7 +183,7 @@ archive/accounts/{alias}/
   media/images/
   media/videos/
   thumbs/
-  metadata/posts/
+  metadata/conversations/
   metadata/pages/
   metadata/failures/
   logs/
@@ -204,7 +197,7 @@ Directory roles:
   Downloaded primary media files.
 - `thumbs/`
   Thumbnails and preview images.
-- `metadata/posts/`
+- `metadata/conversations/`
   Raw JSON snapshots for individual posts.
 - `metadata/pages/`
   Raw JSON API page responses for audit and replay.
@@ -250,15 +243,15 @@ After an archive run, the minimum healthy state is:
 Common checks:
 
 ```bash
-uv run grok-imagine-archive status --account demo
-uv run grok-imagine-archive verify --account demo
+uv run grok-local status --account demo
+uv run grok-local verify --account demo
 ```
 
 If a temporary download failure occurs:
 
 ```bash
-uv run grok-imagine-archive download --account demo --concurrency 8
-uv run grok-imagine-archive verify --account demo
+uv run grok-local download --account demo --concurrency 8
+uv run grok-local verify --account demo
 ```
 
 ## Safety Boundaries
