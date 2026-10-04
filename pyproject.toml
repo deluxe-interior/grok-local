@@ -11,7 +11,7 @@ dependencies = [
 ]
 
 [project.scripts]
-grok-imagine-archive = "grok-local.cli:main"
+grok-local = "grok-local.cli:main"
 
 [dependency-groups]
 dev = [
