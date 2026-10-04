@@ -2,11 +2,11 @@
 
 **English** 
 
-`grok-local` is a local archive tool for Grok Imagine Saved/Liked assets. It
-uses the JSON APIs behind the official Web interface in read-only mode, then
+`grok-local` is a local tool from grok.com/imnagine assets. It
+uses the JSON APIs behind the official web interface in read-only mode, then
 stores every enumerable image, video, thumbnail, prompt, raw JSON payload, folder
 relationship, and derivation relationship in a local archive. It also includes a
-read-only Web UI for browsing the archive offline.
+web interface browsing locally.
 
 - Remote enumeration uses cursor pagination instead of first-screen DOM state, so
   it is not misled by lazy loading in the Saved page.
